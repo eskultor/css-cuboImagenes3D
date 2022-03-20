@@ -1,0 +1,106 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: black;
+	background-image: url(https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80);
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animation 100s linear infinite;
+	color: white;
+	display: flex;
+	min-height: 100vh;
+}
+
+@keyframes animation 
+{
+    100% 
+    {
+        background-position: 0px -3000px;
+    }
+}
+.titulo
+{
+	padding-bottom: 100px;
+	text-transform: uppercase;
+	font-size: 50px;
+	color: red;
+	text-shadow: -2px 0px 1px whitesmoke;
+}
+.container
+{
+	margin: auto;
+	padding-bottom: 100px;
+	perspective: 700px;
+}
+.caja
+{
+	width: 200px;
+	min-height: 200px;
+	position: relative;
+	transform-style: preserve-3d;
+	animation: girar 20s infinite linear;
+}
+
+@keyframes girar
+{
+	from
+	{
+		transform: rotateY(0deg);
+	}
+	to
+	{
+		transform: rotateY(360deg) rotateX(360deg);
+	}
+}
+
+
+
+.cara
+{
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+}
+#uno
+{
+	background-color: yellow;
+	background-image: url(../../assets/imagenes/1.jpg);
+	background-size: cover;
+	transform: translateZ(100px);
+}
+#dos
+{
+	background-color: red;
+	background-image: url(../../assets/imagenes/yo.jpg);
+	background-size: cover;
+	transform: translateX(100px) rotateY(90deg);
+}
+#tres
+{
+	background-color: blue;
+	background-image: url(../../assets/imagenes/nat1.jpg);
+	background-size: cover;
+	transform: translateZ(-100px);
+}
+#cuatro
+{
+	background-color: green;
+	background-image: url(../../assets/imagenes/niñas.jpg);
+	background-size: cover;
+	transform: translateX(-100px) rotateY(90deg);
+}
+#cinco
+{
+	background-color: pink;
+	background-image: url(../../assets/imagenes/niñas2.jpg);
+	background-size: cover;
+	transform: translateY(-100px) rotateX(90deg);
+}
+#seis
+{
+	background-color: brown;
+	background-image: url(../../assets/imagenes/nat.jpg);
+	background-size: cover;
+	transform: translateY(100px) rotateX(90deg);
+}
